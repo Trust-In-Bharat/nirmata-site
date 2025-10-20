@@ -1,6 +1,15 @@
 title: "TRUST-IN Bharat — NIRMATA Framework"
 description: "Trusted Resilience & Unified Security Transformation for India"
 theme: minima
+url: "https://trust-in-bharat.github.io"
+baseurl: "/nirmata-site"
 markdown: kramdown
 kramdown:
   input: GFM
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+defaults:
+  - scope: {path: ""}
+    values:
+      layout: default

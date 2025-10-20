@@ -57,11 +57,10 @@ Together, they serve both the **industry and government vision** for a secure, p
 
 ### Core Relationship
 
-| Layer | Name | Function |
-|--------|------|-----------|
-| **Programme / Movement** | **TRUST-IN Bharat** | Public-facing brand for nationwide adoption, self-assessment, and awareness. |
-| **Framework / Standard** | **NIRMATA** | Technical maturity model, scoring logic, evidence base, and alignment with DPDP Act, CERT-In, ISO 27001/27701/42001, and NIST CSF. |
-
+| Layer                | Name                 | Function                                                                                                                 |
+|----------------------|----------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Programme / Movement | **TRUST-IN Bharat**  | Public-facing brand for nationwide adoption, self-assessment, and awareness.                                            |
+| Framework / Standard | **NIRMATA**          | Technical maturity model and evidence approach, aligned with DPDP Act, CERT-In, ISO 27001/27701/42001, and NIST CSF.    |
 
 ---
 

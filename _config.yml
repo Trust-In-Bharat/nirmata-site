@@ -1,0 +1,6 @@
+title: "TRUST-IN Bharat — NIRMATA Framework"
+description: "Trusted Resilience & Unified Security Transformation for India"
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM

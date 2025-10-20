@@ -1,6 +1,7 @@
 ---
 title: TRUST-IN Bharat — NIRMATA Framework
 ---
+{% include nav.html %}
 
 # TRUST-IN Bharat
 

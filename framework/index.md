@@ -2,6 +2,7 @@
 title: TRUST-IN Bharat — NIRMATA Framework
 layout: default
 ---
+{% include nav.html %}
 
 # TRUST-IN Bharat — NIRMATA Framework
 

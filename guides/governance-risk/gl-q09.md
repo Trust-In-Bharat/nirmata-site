@@ -45,7 +45,7 @@ A cross-functional committee unblocks decisions across IT, Legal, HR, Ops, and F
 ## Metrics / KPIs
 - Attendance %; actions closed vs opened.
 - Time to decision for escalations.
-- # policy exceptions approved.
+- Number of policy exceptions approved.
 
 ## Low-Cost / Open-Source Options (MSME)
 

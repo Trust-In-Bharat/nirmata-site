@@ -45,7 +45,7 @@ Most breaches involve suppliers. Leadership needs regular visibility to vendor r
 
 ## Metrics / KPIs
 - % high-risk vendors with current assurance.
-- # overdue vendor actions.
+- Number of overdue vendor actions.
 - Time to remediate critical findings.
 
 ## Low-Cost / Open-Source Options (MSME)

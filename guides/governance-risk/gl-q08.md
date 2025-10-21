@@ -46,7 +46,7 @@ Escalation clarity cuts response time and limits damage. Everyone should know â€
 ## Metrics / KPIs
 - Acknowledgement time by severity.
 - % successful call-tree tests.
-- # escalations breaching SLA.
+- Number of escalations breaching SLA.
 
 ## Low-Cost / Open-Source Options (MSME)
 

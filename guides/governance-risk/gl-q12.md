@@ -46,7 +46,7 @@ External benchmarks prevent local optimism bias and show where to invest next. T
 ## Metrics / KPIs
 - Δ maturity score (pillar and composite).
 - % actions completed from prior cycle.
-- # external benchmarks completed.
+- Number of external benchmarks completed.
 
 ## Low-Cost / Open-Source Options (MSME)
 

@@ -1,21 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  {%- seo -%}
-  <!-- Cayman stylesheet -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  <link rel="stylesheet" href="{{ '/css/site.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/css/playbook.css' | relative_url }}">
-</head>
-<body>
-  {% include nav.html %}
-{% include guides-nav.html %}
-  <main class="container playbook">
-    {{ content }}
-  </main>
-  {% include footer.html %}
-</body>
-</html>
+---
+layout: default
+---
+
+{% include pillars-nav.html %}
+
+{% if page.pillar and page.question_id %}
+<p class="playbook-breadcrumb">{{ page.pillar }} · {{ page.question_id }}</p>
+{% endif %}
+
+<main class="playbook">
+  {{ content }}
+</main>

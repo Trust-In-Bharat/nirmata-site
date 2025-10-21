@@ -1,7 +1,7 @@
 {% assign items = site.data.pillars.pillars | sort: "order" %}
-<nav class="pillars-nav pillbar pills-nav nav-pills">
-  <a class="pill chip btn-pill" href="{{ '/guides/' | relative_url }}">All Guides</a>
+<div class="pillars-nav">
+  <a class="pill" href="{{ '/guides/' | relative_url }}">All Guides</a>
   {% for p in items %}
-    <a class="pill chip btn-pill" href="{{ '/guides/' | append: p.slug | append: '/' | relative_url }}">{{ p.short }}</a>
+    <a class="pill" href="{{ '/guides/' | append: p.slug | append: '/' | relative_url }}">{{ p.short }}</a>
   {% endfor %}
-</nav>
+</div>

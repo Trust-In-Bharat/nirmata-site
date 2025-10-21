@@ -2,6 +2,7 @@
 title: TRUST-IN Bharat — Framework Positioning and Legal Notice
 layout: default
 updated: "21 Oct 2025"
+permalink: /legal/positioning/
 ---
 
 # TRUST-IN Bharat — Framework Positioning and Legal Notice

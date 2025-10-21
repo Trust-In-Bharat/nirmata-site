@@ -13,3 +13,27 @@ th{background:#f6f8fa;font-weight:600}
 /* Center the global site nav */
 nav.site-nav{ text-align:center }
 nav.site-nav a{ display:inline-block }
+
+/* --- Main top navigation --- */
+.site-nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px 14px;
+  padding:10px 14px;
+  margin:6px auto 8px;
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  border-radius:999px;
+}
+.site-nav a{
+  text-decoration:none;
+  color:#0d47a1;
+  padding:6px 10px;
+  border-radius:6px;
+  font-weight:600;
+}
+.site-nav a:hover{
+  background:#eaf2ff;
+  color:#0a3579;
+}

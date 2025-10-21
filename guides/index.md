@@ -5,20 +5,19 @@ title: Guides — Pillar Playbooks
 
 Use these playbooks to self-assess and level up with minimal friction and clear ROI.
 
-## Governance & Leadership (GL)
-Below are the first 12 playbooks (GL-Q01…GL-Q12):
+{% include pillars-nav.html %}
 
-- [GL-Q01 — Governance structure]({{ '/guides/governance-risk/gl-q01' | relative_url }})
-- [GL-Q02 — Leadership risk updates]({{ '/guides/governance-risk/gl-q02' | relative_url }})
-- [GL-Q03 — Approved security policy]({{ '/guides/governance-risk/gl-q03' | relative_url }})
-- [GL-Q04 — Budget & staffing]({{ '/guides/governance-risk/gl-q04' | relative_url }})
-- [GL-Q05 — Appointed roles & independence]({{ '/guides/governance-risk/gl-q05' | relative_url }})
-- [GL-Q06 — Measurable objectives]({{ '/guides/governance-risk/gl-q06' | relative_url }})
-- [GL-Q07 — Tone at the top]({{ '/guides/governance-risk/gl-q07' | relative_url }})
-- [GL-Q08 — Escalation path]({{ '/guides/governance-risk/gl-q08' | relative_url }})
-- [GL-Q09 — Governing committee]({{ '/guides/governance-risk/gl-q09' | relative_url }})
-- [GL-Q10 — Third-party reporting]({{ '/guides/governance-risk/gl-q10' | relative_url }})
-- [GL-Q11 — Link to internal audit]({{ '/guides/governance-risk/gl-q11' | relative_url }})
-- [GL-Q12 — External benchmarking]({{ '/guides/governance-risk/gl-q12' | relative_url }})
+## Pillars
 
-> More pillars will appear here as we publish them.
+<ul>
+{% assign pillar_slugs = "governance-risk|asset-data|identity-access|network-security|application-security|endpoint-workload|sec-ops-monitoring|incident-response|privacy-data-protection|compliance-audit|supply-chain|awareness-training" | split:"|" %}
+{% assign pillar_names = "Governance & Leadership|Asset & Data Management|Identity & Access Management|Network Security|Application Security|Endpoint & Workload Security|Security Operations & Monitoring|Incident Response & Recovery|Privacy & Data Protection|Compliance & Audit Readiness|Supply Chain & Third-Party Risk|Awareness, Training & Culture" | split:"|" %}
+{% for n in pillar_names %}
+  {% assign s = pillar_slugs[forloop.index0] %}
+  {% assign items = site.pages | where:"pillar", n | where_exp:"p","p.question_id" %}
+  <li>
+    <a href="{{ '/guides/' | append: s | append: '/' | relative_url }}">{{ n }}</a>
+    {% if items and items.size > 0 %} — <em>{{ items.size }} playbooks</em>{% else %} — <em>coming soon</em>{% endif %}
+  </li>
+{% endfor %}
+</ul>

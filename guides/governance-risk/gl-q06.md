@@ -46,7 +46,7 @@ Clear, measurable objectives keep the program focused and defendable. They conne
 ## Metrics / KPIs
 - % objectives on track.
 - Variance vs target (by KPI).
-- # improvements raised from reviews.
+- Number of improvements raised from reviews.
 
 ## Low-Cost / Open-Source Options (MSME)
 

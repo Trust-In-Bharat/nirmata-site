@@ -44,7 +44,7 @@ Named, empowered roles avoid conflicts and speed decisions, especially for incid
 - Conflict-of-interest/independence note.
 
 ## Metrics / KPIs
-- # escalations resolved within SLA.
+- Number of escalations resolved within SLA.
 - % policies owned and reviewed on time.
 - Audit finding age (by role).
 

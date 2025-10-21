@@ -44,7 +44,7 @@ Leadership visibility drives funding, prioritization, and cross-department coope
 - Links to risk register entries closed after reviews.
 
 ## Metrics / KPIs
-- # decisions per quarter; % actions closed on time.
+- Number of decisions per quarter; % actions closed on time.
 - Δ residual risk vs quarter start.
 - Incident MTTR trend presented to leadership.
 

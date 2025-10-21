@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include pillars-nav.html %}
+{% include guides-nav.html %}
 
 {% assign siblings = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
 {% assign index = siblings | index_of: page %}

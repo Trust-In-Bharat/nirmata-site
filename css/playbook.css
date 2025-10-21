@@ -101,3 +101,78 @@ th { background:#f6f8fa; }
 }
 .guides-nav .pager a.prev::before{content:"◄ "; font-size:1.05em}
 .guides-nav .pager a.next::after{content:" ►"; font-size:1.05em}
+/* ==== Playbook polish: tables & accents ==== */
+
+/* Base table styling (applies only inside playbook pages) */
+.playbook table{
+  border-collapse:separate;
+  border-spacing:0;
+  width:100%;
+  background:#fff;
+  border:1px solid #e6e9ef;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 1px 0 rgba(0,0,0,.02);
+  margin:14px 0 22px;
+}
+.playbook th, .playbook td{
+  padding:10px 12px;
+  border-bottom:1px solid #eef1f6;
+  vertical-align:top;
+}
+.playbook thead th{
+  background:#eaf3ff;
+  color:#0d47a1;
+  font-weight:700;
+  border-bottom:1px solid #dbe6f5;
+}
+.playbook tbody tr:nth-child(odd){ background:#fafcff }
+.playbook tbody tr:hover{ background:#f2f7ff }
+
+/* Make first column more prominent (usually labels / “From → To” / Standard) */
+.playbook td:first-child{
+  font-weight:600;
+  color:#37474f;
+  width:28%;
+  white-space:nowrap;
+}
+
+/* Subtle chips for emphasized text inside tables */
+.playbook td strong{
+  background:#eef4ff;
+  padding:2px 6px;
+  border-radius:8px;
+  font-weight:700;
+}
+
+/* Link treatment inside tables */
+.playbook td a{ color:#0d47a1; text-decoration:none }
+.playbook td a:hover{ text-decoration:underline }
+
+/* --- Table-specific tweaks by section heading that precedes them --- */
+/* We can’t add classes in Markdown, so we style by heading text proximity */
+.playbook h2 + table, .playbook h3 + table{ margin-top:10px }
+
+/* How to Level Up (2-col): give actions column more room */
+.playbook h2:contains("How to Level Up") + table td:nth-child(2),
+.playbook h3:contains("How to Level Up") + table td:nth-child(2){ width:72% }
+
+/* Low-Cost / Open-Source (3-col): let Tool breathe */
+.playbook h2:contains("Low-Cost") + table td:nth-child(2),
+.playbook h3:contains("Low-Cost") + table td:nth-child(2){ min-width:210px }
+
+/* Compliance Mapping (2-col): make first column narrower, tighter rows */
+.playbook h2:contains("Compliance Mapping") + table td:first-child,
+.playbook h3:contains("Compliance Mapping") + table td:first-child{ width:24% }
+.playbook h2:contains("Compliance Mapping") + table td,
+.playbook h3:contains("Compliance Mapping") + table td{ padding-top:8px; padding-bottom:8px }
+
+/* Tiny badge helpers (use **text** in markdown to benefit) */
+.playbook .badge{
+  display:inline-block; padding:2px 8px; border-radius:999px; font-size:.85rem;
+  background:#e8f0fe; color:#0d47a1; border:1px solid #cfe0ff; font-weight:700;
+}
+
+/* Spacing polish around sections */
+.playbook h2{ margin-top:28px }
+.playbook ul{ margin:8px 0 20px; }

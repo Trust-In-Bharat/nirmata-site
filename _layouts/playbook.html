@@ -4,34 +4,16 @@ layout: default
 
 {% include pillars-nav.html %}
 
-{% comment %}
-  Build a sibling list of playbooks in the same pillar, sorted by question_id.
-  Use pages + documents so it works regardless of how Jekyll classifies files.
-{% endcomment %}
-{% assign all_docs = site.pages | concat: site.documents %}
-{% assign siblings = all_docs | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
-
-{% comment %}
-  Find the current page's index within siblings and compute prev/next.
-{% endcomment %}
-{% assign prev = nil %}
-{% assign next = nil %}
-{% for p in siblings %}
-  {% if p.url == page.url %}
-    {% assign idx = forloop.index0 %}
-    {% if idx > 0 %}
-      {% assign prev = siblings[idx | minus: 1] %}
-    {% endif %}
-    {% if idx < siblings.size | minus: 1 %}
-      {% assign next = siblings[idx | plus: 1] %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
+{% assign siblings = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
+{% assign index = siblings | index_of: page %}
+{% assign prev = siblings[index | minus: 1] %}
+{% assign next = siblings[index | plus: 1] %}
 
 {% if page.pillar and page.question_id %}
 <p class="playbook-breadcrumb">{{ page.pillar }} · {{ page.question_id }}</p>
 {% endif %}
 
+{% if prev or next %}
 <div class="playbook-nav">
   {% if prev %}
   <a class="nav-arrow prev" href="{{ prev.url | relative_url }}">◀︎ {{ prev.question_id }}</a>
@@ -40,11 +22,13 @@ layout: default
   <a class="nav-arrow next" href="{{ next.url | relative_url }}">{{ next.question_id }} → ▶︎</a>
   {% endif %}
 </div>
+{% endif %}
 
 <main class="playbook">
   {{ content }}
 </main>
 
+{% if prev or next %}
 <div class="playbook-nav bottom">
   {% if prev %}
   <a class="nav-arrow prev" href="{{ prev.url | relative_url }}">◀︎ {{ prev.question_id }}</a>
@@ -53,3 +37,4 @@ layout: default
   <a class="nav-arrow next" href="{{ next.url | relative_url }}">{{ next.question_id }} → ▶︎</a>
   {% endif %}
 </div>
+{% endif %}

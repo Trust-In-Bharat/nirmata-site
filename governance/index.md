@@ -1,7 +1,6 @@
 ---
 title: Governance
 ---
-{% include nav.html %}
 
 # Governance
 

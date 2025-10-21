@@ -1,7 +1,6 @@
 ---
 title: Releases
 ---
-{% include nav.html %}
 
 # Releases
 

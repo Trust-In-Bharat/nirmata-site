@@ -28,3 +28,22 @@ th { background:#f6f8fa; }
 /* Footer note */
 .footer-note { border-top:1px solid #ddd; padding-top:8px; }
 
+
+/* Question block */
+.playbook blockquote{
+  font-size:1.25rem;
+  font-weight:600;
+  border-left:4px solid #2a7ab0;
+  background:#f3f9ff;
+  padding:12px 16px;
+  margin:12px 0 20px;
+}
+.playbook blockquote strong{margin-right:6px}
+
+/* Guides secondary nav */
+.guides-nav{margin:8px auto 16px; display:flex; flex-direction:column; gap:6px}
+.guides-nav .pillars{text-align:center}
+.guides-nav .pillars a{margin:0 6px}
+.guides-nav .pager{display:flex; justify-content:space-between; align-items:center; gap:12px}
+.guides-nav .pager .current{opacity:.75}
+.guides-nav .pager a{white-space:nowrap}

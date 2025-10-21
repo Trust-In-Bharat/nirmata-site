@@ -1,0 +1,35 @@
+<nav class="guides-nav">
+  <div class="pillars">
+    <a href="{{ '/guides/' | relative_url }}">All Guides</a>
+    <a href="{{ '/guides/governance-risk/' | relative_url }}">Governance & Leadership</a>
+    <a href="{{ '/guides/governance-risk/' | relative_url }}#risk">Risk & Compliance</a>
+    <a href="{{ '/guides/asset-data/' | relative_url }}">Asset & Data</a>
+    <a href="{{ '/guides/identity-access/' | relative_url }}">Identity & Access</a>
+    <a href="{{ '/guides/network-security/' | relative_url }}">Network</a>
+    <a href="{{ '/guides/application-security/' | relative_url }}">Application</a>
+    <a href="{{ '/guides/endpoint-workload/' | relative_url }}">Endpoint</a>
+    <a href="{{ '/guides/sec-ops-monitoring/' | relative_url }}">SecOps</a>
+    <a href="{{ '/guides/incident-response/' | relative_url }}">Incident</a>
+    <a href="{{ '/guides/privacy-data-protection/' | relative_url }}">Privacy</a>
+    <a href="{{ '/guides/compliance-audit/' | relative_url }}">Compliance</a>
+    <a href="{{ '/guides/supply-chain/' | relative_url }}">Supply Chain</a>
+    <a href="{{ '/guides/awareness-training/' | relative_url }}">Awareness</a>
+  </div>
+
+  {% assign peers = site.pages | where:"pillar", page.pillar | sort:"question_id" %}
+  {% assign idx = -1 %}
+  {% for p in peers %}
+    {% if p.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}
+  {% endfor %}
+  <div class="pager">
+    {% if idx > 0 %}
+      {% assign prev = peers[idx | minus: 1] %}
+      <a class="prev" href="{{ prev.url | relative_url }}">← {{ prev.question_id }}</a>
+    {% endif %}
+    <span class="current">{{ page.pillar }} · {{ page.question_id }}</span>
+    {% if idx >= 0 and idx < peers.size | minus: 1 %}
+      {% assign next = peers[idx | plus: 1] %}
+      <a class="next" href="{{ next.url | relative_url }}">{{ next.question_id }} →</a>
+    {% endif %}
+  </div>
+</nav>

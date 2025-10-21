@@ -2,7 +2,6 @@
   <div class="pillars">
     <a href="{{ '/guides/' | relative_url }}">All Guides</a>
     <a href="{{ '/guides/governance-risk/' | relative_url }}">Governance & Leadership</a>
-    <a href="{{ '/guides/governance-risk/' | relative_url }}#risk">Risk & Compliance</a>
     <a href="{{ '/guides/asset-data/' | relative_url }}">Asset & Data</a>
     <a href="{{ '/guides/identity-access/' | relative_url }}">Identity & Access</a>
     <a href="{{ '/guides/network-security/' | relative_url }}">Network</a>
@@ -16,20 +15,34 @@
     <a href="{{ '/guides/awareness-training/' | relative_url }}">Awareness</a>
   </div>
 
-  {% assign peers = site.pages | where:"pillar", page.pillar | sort:"question_id" %}
-  {% assign idx = -1 %}
-  {% for p in peers %}
-    {% if p.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}
-  {% endfor %}
+  {%- comment -%}
+    Build ordered peer list within the same pillar, only pages that have question_id.
+  {%- endcomment -%}
+  {% assign peers = site.pages | where:"pillar", page.pillar | where_exp:"p","p.question_id" | sort:"question_id" %}
+
+  {%- assign current_index = -1 -%}
+  {%- for p in peers -%}
+    {%- if p.url == page.url -%}{%- assign current_index = forloop.index0 -%}{%- endif -%}
+  {%- endfor -%}
+
+  {%- assign prev_index = current_index | minus: 1 -%}
+  {%- assign next_index = current_index | plus: 1 -%}
+
   <div class="pager">
-    {% if idx > 0 %}
-      {% assign prev = peers[idx | minus: 1] %}
+    {%- if prev_index >= 0 -%}
+      {%- assign prev = peers | slice: prev_index, 1 | first -%}
       <a class="prev" href="{{ prev.url | relative_url }}">← {{ prev.question_id }}</a>
-    {% endif %}
+    {%- else -%}
+      <span></span>
+    {%- endif -%}
+
     <span class="current">{{ page.pillar }} · {{ page.question_id }}</span>
-    {% if idx >= 0 and idx < peers.size | minus: 1 %}
-      {% assign next = peers[idx | plus: 1] %}
+
+    {%- if next_index < peers.size -%}
+      {%- assign next = peers | slice: next_index, 1 | first -%}
       <a class="next" href="{{ next.url | relative_url }}">{{ next.question_id }} →</a>
-    {% endif %}
+    {%- else -%}
+      <span></span>
+    {%- endif -%}
   </div>
 </nav>

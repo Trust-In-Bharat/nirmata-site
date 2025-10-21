@@ -24,13 +24,14 @@ People mirror leaders. Regular, plain-language messages normalize secure behavio
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | CEO sends a short note endorsing policy and reporting channels. |
-| 1 → 2 | Publish quarterly calendar of leadership comms. |
-| 2 → 3 | Add live town-hall slot with simple demos (MFA, phishing report). |
-| 3 → 4 | Share metrics; recognize champions/teams. |
-| 4 → 5 | Run pulse surveys; adjust messages to address gaps. |
+|0 → 1 | CEO sends a short note endorsing policy and reporting channels. |
+|1 → 2 | Publish quarterly calendar of leadership comms. |
+|2 → 3 | Add live town-hall slot with simple demos (MFA, phishing report). |
+|3 → 4 | Share metrics; recognize champions/teams. |
+|4 → 5 | Run pulse surveys; adjust messages to address gaps. |
 
 ## People / Process / Technology Enablers
 - People: CEO/BU heads; Security/Privacy leads.
@@ -48,11 +49,12 @@ People mirror leaders. Regular, plain-language messages normalize secure behavio
 - Survey sentiment on “leadership prioritizes security”.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| Newsletters | Buttondown / MailerLite | Track opens/clicks. |
-| Surveys | Google Forms | 5-question pulse. |
-| Town-halls | Meet/Zoom | Recordings archived. |
+|Newsletters | Buttondown / MailerLite | Track opens/clicks. |
+|Surveys | Google Forms | 5-question pulse. |
+|Town-halls | Meet/Zoom | Recordings archived. |
 
 ## Common Pitfalls
 - One-off launch note only.
@@ -60,8 +62,9 @@ People mirror leaders. Regular, plain-language messages normalize secure behavio
 - No link to real actions or help.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 5.1 leadership |
-| NIRMATA Scoring | GL-Q07 needs evidence of regular, two-way comms.
+|ISO/IEC 27001:2022 | 5.1 leadership |
+|NIRMATA Scoring | GL-Q07 needs evidence of regular, two-way comms.
 

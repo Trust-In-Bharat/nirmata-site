@@ -24,13 +24,14 @@ External benchmarks prevent local optimism bias and show where to invest next. T
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Choose a framework; run a baseline self-assessment. |
-| 1 → 2 | Publish results internally; add actions to security roadmap. |
-| 2 → 3 | Repeat annually; compare deltas; assign owners. |
-| 3 → 4 | Obtain third-party review; join sector forums. |
-| 4 → 5 | Share maturity summary with customers; celebrate improvements. |
+|0 → 1 | Choose a framework; run a baseline self-assessment. |
+|1 → 2 | Publish results internally; add actions to security roadmap. |
+|2 → 3 | Repeat annually; compare deltas; assign owners. |
+|3 → 4 | Obtain third-party review; join sector forums. |
+|4 → 5 | Share maturity summary with customers; celebrate improvements. |
 
 ## People / Process / Technology Enablers
 - People: Security/Privacy lead; leadership sponsor.
@@ -48,11 +49,12 @@ External benchmarks prevent local optimism bias and show where to invest next. T
 - # external benchmarks completed.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| Self-assessment | Google Sheets | Mirror Annex G anchors. |
-| Evidence | Repo/Drive | Map evidence links to questions. |
-| Visualization | Radar chart in Sheets | Pillar deltas over years. |
+|Self-assessment | Google Sheets | Mirror Annex G anchors. |
+|Evidence | Repo/Drive | Map evidence links to questions. |
+|Visualization | Radar chart in Sheets | Pillar deltas over years. |
 
 ## Common Pitfalls
 - Treating assessment as a marketing badge only.
@@ -60,9 +62,10 @@ External benchmarks prevent local optimism bias and show where to invest next. T
 - No action tracking from results.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 9.1 monitoring & measurement |
-| CERT-In / Sector Programmes | Participation evidence |
-| NIRMATA Scoring | GL-Q12: external benchmark + action linkage required.
+|ISO/IEC 27001:2022 | 9.1 monitoring & measurement |
+|CERT-In / Sector Programmes | Participation evidence |
+|NIRMATA Scoring | GL-Q12: external benchmark + action linkage required.
 

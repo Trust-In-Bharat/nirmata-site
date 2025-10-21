@@ -24,13 +24,14 @@ Named, empowered roles avoid conflicts and speed decisions, especially for incid
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Nominate role owners and draft ToR with duties. |
-| 1 → 2 | Issue appointment letters; publish org chart with reporting. |
-| 2 → 3 | Define decision rights and escalation time limits. |
-| 3 → 4 | Document independence (no product P&L conflicts); board access policy. |
-| 4 → 5 | Create deputies; set outcome KPIs (e.g., audit closure time). |
+|0 → 1 | Nominate role owners and draft ToR with duties. |
+|1 → 2 | Issue appointment letters; publish org chart with reporting. |
+|2 → 3 | Define decision rights and escalation time limits. |
+|3 → 4 | Document independence (no product P&L conflicts); board access policy. |
+|4 → 5 | Create deputies; set outcome KPIs (e.g., audit closure time). |
 
 ## People / Process / Technology Enablers
 - People: CISO (part-time acceptable), Privacy/DPO, Risk lead.
@@ -48,11 +49,12 @@ Named, empowered roles avoid conflicts and speed decisions, especially for incid
 - Audit finding age (by role).
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| Org charts | draw.io | Simple export to PDF/PNG. |
-| ToR templates | Markdown repo | Versioned in git. |
-| Role visibility | Intranet page | Who to contact, when, how. |
+|Org charts | draw.io | Simple export to PDF/PNG. |
+|ToR templates | Markdown repo | Versioned in git. |
+|Role visibility | Intranet page | Who to contact, when, how. |
 
 ## Common Pitfalls
 - Combining security with conflicting delivery KPIs.
@@ -60,9 +62,10 @@ Named, empowered roles avoid conflicts and speed decisions, especially for incid
 - No backups; decisions stall during leave.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 5.3 roles/responsibilities |
-| DPDP Act 2023 | Sec 10(1) DPO/lead |
-| NIRMATA Scoring | GL-Q05 expects formal mandate + independence proof.
+|ISO/IEC 27001:2022 | 5.3 roles/responsibilities |
+|DPDP Act 2023 | Sec 10(1) DPO/lead |
+|NIRMATA Scoring | GL-Q05 expects formal mandate + independence proof.
 

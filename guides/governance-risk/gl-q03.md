@@ -24,13 +24,14 @@ A living, approved policy sets the baseline for controls, reduces audit friction
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Publish a 4-6 page policy covering scope, roles, access, monitoring, IR, vendors. |
-| 1 → 2 | Get formal approval; record version/date; post in intranet; notify staff. |
-| 2 → 3 | Add change log; map to sub-policies (e.g., access, backup, logging); collect annual attestations. |
-| 3 → 4 | Link policy to risk/audit findings; set KPIs (review cycle adherence). |
-| 4 → 5 | Benchmark against ISO/NIST yearly and update with rationale. |
+|0 → 1 | Publish a 4-6 page policy covering scope, roles, access, monitoring, IR, vendors. |
+|1 → 2 | Get formal approval; record version/date; post in intranet; notify staff. |
+|2 → 3 | Add change log; map to sub-policies (e.g., access, backup, logging); collect annual attestations. |
+|3 → 4 | Link policy to risk/audit findings; set KPIs (review cycle adherence). |
+|4 → 5 | Benchmark against ISO/NIST yearly and update with rationale. |
 
 ## People / Process / Technology Enablers
 - People: Policy owner; approver; Legal/HR reviewer.
@@ -48,11 +49,12 @@ A living, approved policy sets the baseline for controls, reduces audit friction
 - # deviations/exceptions approved.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| Versioning | GitHub | Pull requests = approvals; tags = versions. |
-| Attestations | Google Forms | Collect annual “read & understood.” |
-| Publishing | GitHub Pages | Public or internal hosting. |
+|Versioning | GitHub | Pull requests = approvals; tags = versions. |
+|Attestations | Google Forms | Collect annual “read & understood.” |
+|Publishing | GitHub Pages | Public or internal hosting. |
 
 ## Common Pitfalls
 - Policy written like a textbook; nobody reads it.
@@ -60,9 +62,10 @@ A living, approved policy sets the baseline for controls, reduces audit friction
 - No evidence of approval or review cycle.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 5.2; Annex A mapping |
-| DPDP Act 2023 | Sec 9 duty alignment |
-| NIRMATA Scoring | GL-Q03 requires approved policy + annual review proof.
+|ISO/IEC 27001:2022 | 5.2; Annex A mapping |
+|DPDP Act 2023 | Sec 9 duty alignment |
+|NIRMATA Scoring | GL-Q03 requires approved policy + annual review proof.
 

@@ -24,13 +24,14 @@ Controls cost money and time. A small, ring-fenced budget and explicit capacity 
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Create a one-page “minimum viable security” shopping list (EDR, backups, MFA, training). |
-| 1 → 2 | Add line items to annual budget; assign FTE/part-time capacity. |
-| 2 → 3 | Build a risk-based roadmap with quarterly milestones and success criteria. |
-| 3 → 4 | Track benefit metrics (incident reduction, audit closure) in reviews. |
-| 4 → 5 | Introduce ROI/OKR style measures and adjust quarterly. |
+|0 → 1 | Create a one-page “minimum viable security” shopping list (EDR, backups, MFA, training). |
+|1 → 2 | Add line items to annual budget; assign FTE/part-time capacity. |
+|2 → 3 | Build a risk-based roadmap with quarterly milestones and success criteria. |
+|3 → 4 | Track benefit metrics (incident reduction, audit closure) in reviews. |
+|4 → 5 | Introduce ROI/OKR style measures and adjust quarterly. |
 
 ## People / Process / Technology Enablers
 - People: Exec sponsor; budget owner; project manager.
@@ -48,11 +49,12 @@ Controls cost money and time. A small, ring-fenced budget and explicit capacity 
 - % budget consumed vs plan.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| Roadmap | GitHub Projects | Kanban with milestones. |
-| KPIs | Google Looker Studio | Pulls from Sheets. |
-| Time/capacity | Toggl Track (free tier) | Time allocation for the function. |
+|Roadmap | GitHub Projects | Kanban with milestones. |
+|KPIs | Google Looker Studio | Pulls from Sheets. |
+|Time/capacity | Toggl Track (free tier) | Time allocation for the function. |
 
 ## Common Pitfalls
 - Buying tools without people/time to operate.
@@ -60,8 +62,9 @@ Controls cost money and time. A small, ring-fenced budget and explicit capacity 
 - Starving foundational basics (MFA, backup, logging).
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 7.1-7.3 (resources/competence) |
-| NIRMATA Scoring | GL-Q04 expects documented budget + staffing evidence.
+|ISO/IEC 27001:2022 | 7.1-7.3 (resources/competence) |
+|NIRMATA Scoring | GL-Q04 expects documented budget + staffing evidence.
 

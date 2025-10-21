@@ -24,13 +24,14 @@ Leadership visibility drives funding, prioritization, and cross-department coope
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Book a standing 15-minute slot in leadership review; present top 5 risks. |
-| 1 → 2 | Define a one-page dashboard (KRIs, incidents, projects, vendor issues). |
-| 2 → 3 | Track decisions in a log; link to risk register and CAPA tracker. |
-| 3 → 4 | Integrate with ERM and budget cycles; include audit/compliance status. |
-| 4 → 5 | Add external benchmarks and assurance results; review risk appetite annually. |
+|0 → 1 | Book a standing 15-minute slot in leadership review; present top 5 risks. |
+|1 → 2 | Define a one-page dashboard (KRIs, incidents, projects, vendor issues). |
+|2 → 3 | Track decisions in a log; link to risk register and CAPA tracker. |
+|3 → 4 | Integrate with ERM and budget cycles; include audit/compliance status. |
+|4 → 5 | Add external benchmarks and assurance results; review risk appetite annually. |
 
 ## People / Process / Technology Enablers
 - People: CISO/Privacy Lead; Finance partner; Internal Audit rep.
@@ -48,11 +49,12 @@ Leadership visibility drives funding, prioritization, and cross-department coope
 - Incident MTTR trend presented to leadership.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| Dashboards | Google Sheets + Charts | Keep it simple; snapshot monthly. |
-| Risk register | Simple spreadsheet | Owner, due date, residual risk, evidence link. |
-| Presentation | LibreOffice Impress | Standard deck template. |
+|Dashboards | Google Sheets + Charts | Keep it simple; snapshot monthly. |
+|Risk register | Simple spreadsheet | Owner, due date, residual risk, evidence link. |
+|Presentation | LibreOffice Impress | Standard deck template. |
 
 ## Common Pitfalls
 - Slides heavy on tools, light on business impact.
@@ -60,9 +62,10 @@ Leadership visibility drives funding, prioritization, and cross-department coope
 - Hiding bad news; under-reporting close calls.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 9.3 (management review) |
-| CERT-In 2022 | Governance/oversight expectation |
-| NIRMATA Scoring | GL-Q02: evidence = decks + minutes + action closure.
+|ISO/IEC 27001:2022 | 9.3 (management review) |
+|CERT-In 2022 | Governance/oversight expectation |
+|NIRMATA Scoring | GL-Q02: evidence = decks + minutes + action closure.
 

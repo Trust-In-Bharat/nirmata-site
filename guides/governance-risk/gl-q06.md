@@ -24,13 +24,14 @@ Clear, measurable objectives keep the program focused and defendable. They conne
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Draft 3-5 SMART objectives (e.g., “MFA coverage ≥95%”). |
-| 1 → 2 | Assign owners/dates; publish on a shared page. |
-| 2 → 3 | Build a KPI tracker; review quarterly; tie to risks. |
-| 3 → 4 | Integrate with corporate OKRs; include in leadership deck. |
-| 4 → 5 | Compare with peers; raise targets annually. |
+|0 → 1 | Draft 3-5 SMART objectives (e.g., “MFA coverage ≥95%”). |
+|1 → 2 | Assign owners/dates; publish on a shared page. |
+|2 → 3 | Build a KPI tracker; review quarterly; tie to risks. |
+|3 → 4 | Integrate with corporate OKRs; include in leadership deck. |
+|4 → 5 | Compare with peers; raise targets annually. |
 
 ## People / Process / Technology Enablers
 - People: Security lead; data/analytics partner.
@@ -48,11 +49,12 @@ Clear, measurable objectives keep the program focused and defendable. They conne
 - # improvements raised from reviews.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| KPI tracker | Google Sheets | Conditional formatting for status. |
-| OKRs | Notion / Markdown | Lightweight goal setting. |
-| Dashboards | Metabase | Read from Sheets/CSV. |
+|KPI tracker | Google Sheets | Conditional formatting for status. |
+|OKRs | Notion / Markdown | Lightweight goal setting. |
+|Dashboards | Metabase | Read from Sheets/CSV. |
 
 ## Common Pitfalls
 - Too many objectives; none measured.
@@ -60,8 +62,9 @@ Clear, measurable objectives keep the program focused and defendable. They conne
 - Targets without owners.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 6.2 objectives |
-| NIRMATA Scoring | GL-Q06 requires measurable, owner-assigned objectives.
+|ISO/IEC 27001:2022 | 6.2 objectives |
+|NIRMATA Scoring | GL-Q06 requires measurable, owner-assigned objectives.
 

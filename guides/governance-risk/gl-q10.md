@@ -24,13 +24,14 @@ Most breaches involve suppliers. Leadership needs regular visibility to vendor r
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Build a spreadsheet of high-risk vendors with owners. |
-| 1 → 2 | Add risk score, last review date, next action. |
-| 2 → 3 | Include assurance evidence (certs, SOC2), open issues and due dates. |
-| 3 → 4 | Track contract clauses/breach reporting; escalate overdue vendors. |
-| 4 → 5 | Integrate continuous monitoring feed and drill results. |
+|0 → 1 | Build a spreadsheet of high-risk vendors with owners. |
+|1 → 2 | Add risk score, last review date, next action. |
+|2 → 3 | Include assurance evidence (certs, SOC2), open issues and due dates. |
+|3 → 4 | Track contract clauses/breach reporting; escalate overdue vendors. |
+|4 → 5 | Integrate continuous monitoring feed and drill results. |
 
 ## People / Process / Technology Enablers
 - People: Vendor owners; procurement; legal.
@@ -48,11 +49,12 @@ Most breaches involve suppliers. Leadership needs regular visibility to vendor r
 - Time to remediate critical findings.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| Register | Spreadsheet | Keep it tight; filterable. |
-| Evidence | Drive/Repo | Folder per vendor. |
-| Monitoring | RSS/Google Alerts | For public incidents. |
+|Register | Spreadsheet | Keep it tight; filterable. |
+|Evidence | Drive/Repo | Folder per vendor. |
+|Monitoring | RSS/Google Alerts | For public incidents. |
 
 ## Common Pitfalls
 - “Set and forget” after onboarding.
@@ -60,9 +62,10 @@ Most breaches involve suppliers. Leadership needs regular visibility to vendor r
 - Missing sub-processor visibility.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO 27036 / ISO 27701 | Vendor governance |
-| DPDP | Sec 8 duties of processors |
-| NIRMATA Scoring | GL-Q10 expects periodic leadership reporting + actions.
+|ISO 27036 / ISO 27701 | Vendor governance |
+|DPDP | Sec 8 duties of processors |
+|NIRMATA Scoring | GL-Q10 expects periodic leadership reporting + actions.
 

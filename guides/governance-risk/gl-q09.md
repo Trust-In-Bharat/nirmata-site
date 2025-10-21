@@ -24,13 +24,14 @@ A cross-functional committee unblocks decisions across IT, Legal, HR, Ops, and F
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Identify members; draft charter and objectives. |
-| 1 → 2 | Approve charter; schedule standing meetings. |
-| 2 → 3 | Maintain agenda/minutes; track actions in a shared board. |
-| 3 → 4 | Integrate risk, audit, and budget reviews. |
-| 4 → 5 | Publish KPIs; refresh membership annually. |
+|0 → 1 | Identify members; draft charter and objectives. |
+|1 → 2 | Approve charter; schedule standing meetings. |
+|2 → 3 | Maintain agenda/minutes; track actions in a shared board. |
+|3 → 4 | Integrate risk, audit, and budget reviews. |
+|4 → 5 | Publish KPIs; refresh membership annually. |
 
 ## People / Process / Technology Enablers
 - People: Chair, secretary, function reps.
@@ -47,11 +48,12 @@ A cross-functional committee unblocks decisions across IT, Legal, HR, Ops, and F
 - # policy exceptions approved.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| Minutes | Markdown in repo | PR = approval. |
-| Actions | GitHub Projects | Kanban per meeting. |
-| Calendar | Google Calendar | Recurring with agenda link. |
+|Minutes | Markdown in repo | PR = approval. |
+|Actions | GitHub Projects | Kanban per meeting. |
+|Calendar | Google Calendar | Recurring with agenda link. |
 
 ## Common Pitfalls
 - Committee exists only on paper.
@@ -59,8 +61,9 @@ A cross-functional committee unblocks decisions across IT, Legal, HR, Ops, and F
 - Minutes not stored/versioned.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 5.3, 9.3 |
-| NIRMATA Scoring | GL-Q09 requires active committee with evidence.
+|ISO/IEC 27001:2022 | 5.3, 9.3 |
+|NIRMATA Scoring | GL-Q09 requires active committee with evidence.
 

@@ -24,13 +24,14 @@ Without a clear governance structure, security and privacy efforts drift and acc
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Write a one-page governance note naming security/privacy leads; publish in the intranet. |
-| 1 → 2 | Approve a governance charter with RACI; add reporting lines to org chart. |
-| 2 → 3 | Stand up a cross-functional committee (IT, Legal, Operations) with a monthly agenda and minutes. |
-| 3 → 4 | Tie governance reviews to risk register/KPIs; include budget requests and decision logs. |
-| 4 → 5 | Commission annual independent review; adopt external benchmarking (e.g., NIRMATA scores). |
+|0 → 1 | Write a one-page governance note naming security/privacy leads; publish in the intranet. |
+|1 → 2 | Approve a governance charter with RACI; add reporting lines to org chart. |
+|2 → 3 | Stand up a cross-functional committee (IT, Legal, Operations) with a monthly agenda and minutes. |
+|3 → 4 | Tie governance reviews to risk register/KPIs; include budget requests and decision logs. |
+|4 → 5 | Commission annual independent review; adopt external benchmarking (e.g., NIRMATA scores). |
 
 ## People / Process / Technology Enablers
 - People: Named Security Lead, Privacy Lead (could be fractional for MSMEs), Exec Sponsor.
@@ -49,11 +50,12 @@ Without a clear governance structure, security and privacy efforts drift and acc
 - % policies reviewed/approved per cycle.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| Documentation | GitHub / GitLab Wiki | Versioned governance pages, change history. |
-| Action tracking | Trello / GitHub Issues | Keep decision/action logs with owners and due dates. |
-| Dashboards | Metabase / Redash | Simple KPI views from spreadsheets. |
+|Documentation | GitHub / GitLab Wiki | Versioned governance pages, change history. |
+|Action tracking | Trello / GitHub Issues | Keep decision/action logs with owners and due dates. |
+|Dashboards | Metabase / Redash | Simple KPI views from spreadsheets. |
 
 ## Common Pitfalls
 - Naming roles without mandate or time allocation.
@@ -61,10 +63,11 @@ Without a clear governance structure, security and privacy efforts drift and acc
 - Governance that ignores vendors and cloud services.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 5.3, 5.1 (leadership), Annex A.5.1 |
-| DPDP Act 2023 | Sec 10 (roles, accountability) |
-| GDPR (orientation) | Art. 24-25 (responsibility) |
-| NIRMATA Scoring | GL-Q01 evidence anchors; Level ≥3 requires charter + minutes.
+|ISO/IEC 27001:2022 | 5.3, 5.1 (leadership), Annex A.5.1 |
+|DPDP Act 2023 | Sec 10 (roles, accountability) |
+|GDPR (orientation) | Art. 24-25 (responsibility) |
+|NIRMATA Scoring | GL-Q01 evidence anchors; Level ≥3 requires charter + minutes.
 

@@ -24,13 +24,14 @@ Audit closes the loop: controls verified, issues tracked, and lessons learned fe
 </div>
 
 ## How to Level Up
+
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Nominate audit liaison; share key policies and risk register. |
-| 1 → 2 | Add cyber/privacy topics to audit calendar. |
-| 2 → 3 | Use a central CAPA tracker; monthly status to committee. |
-| 3 → 4 | Add root-cause analysis and control owner coaching. |
-| 4 → 5 | Map combined assurance across lines (Ops, Risk, Audit). |
+|0 → 1 | Nominate audit liaison; share key policies and risk register. |
+|1 → 2 | Add cyber/privacy topics to audit calendar. |
+|2 → 3 | Use a central CAPA tracker; monthly status to committee. |
+|3 → 4 | Add root-cause analysis and control owner coaching. |
+|4 → 5 | Map combined assurance across lines (Ops, Risk, Audit). |
 
 ## People / Process / Technology Enablers
 - People: Audit lead; control owners.
@@ -48,11 +49,12 @@ Audit closes the loop: controls verified, issues tracked, and lessons learned fe
 - Repeat finding rate.
 
 ## Low-Cost / Open-Source Options (MSME)
+
 | Purpose | Tool | Notes |
 |---|---|---|
-| CAPA tracker | Spreadsheet/Issues | Aging, SLA, owner columns. |
-| Evidence | Repo folders | “Finding-ID/…” with closure docs. |
-| Reports | Markdown + PDF | Lightweight templates. |
+|CAPA tracker | Spreadsheet/Issues | Aging, SLA, owner columns. |
+|Evidence | Repo folders | “Finding-ID/…” with closure docs. |
+|Reports | Markdown + PDF | Lightweight templates. |
 
 ## Common Pitfalls
 - Findings tracked in email only.
@@ -60,8 +62,9 @@ Audit closes the loop: controls verified, issues tracked, and lessons learned fe
 - No re-test/verification step.
 
 ## Compliance Mapping
+
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 9.2 internal audit, 10.1 improvement |
-| NIRMATA Scoring | GL-Q11 needs CAPA linkage + governance reporting.
+|ISO/IEC 27001:2022 | 9.2 internal audit, 10.1 improvement |
+|NIRMATA Scoring | GL-Q11 needs CAPA linkage + governance reporting.
 

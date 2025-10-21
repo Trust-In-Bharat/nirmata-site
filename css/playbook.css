@@ -1,0 +1,30 @@
+/* Levels grid */
+.levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.level {
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  line-height: 1.35;
+}
+/* Color scale */
+.level-0 { background:#f9dede; border-left:4px solid #d93025; }
+.level-1 { background:#ffe9d5; border-left:4px solid #f57c00; }
+.level-2 { background:#fff6cc; border-left:4px solid #f9ab00; }
+.level-3 { background:#e6f4ea; border-left:4px solid #34a853; }
+.level-4 { background:#e8f0fe; border-left:4px solid #4285f4; }
+.level-5 { background:#f3e8fd; border-left:4px solid #9334e6; }
+
+/* Tables */
+table { width:100%; border-collapse:collapse; margin:1rem 0; }
+th, td { border:1px solid #ddd; padding:0.5rem 0.75rem; text-align:left; }
+th { background:#f6f8fa; }
+
+/* Footer note */
+.footer-note { border-top:1px solid #ddd; padding-top:8px; }
+

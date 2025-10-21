@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" class="playbook">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }}</title>
+  <link href="{{ '/css/site.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/css/playbook.css' | relative_url }}" rel="stylesheet">
+</head>
+<body class="playbook">
+  {% include nav.html %}
+  <main class="container" style="max-width:980px;margin:24px auto;padding:0 16px;">
+    {{ content }}
+    <p class="footer-note" style="margin-top:24px;color:#555;font-size:0.9rem;">
+      Prepared by NIRMATA Secretariat · Version {{ page.version | default: '1.0' }} · Updated {{ page.updated | default: 'October 2025' }} · License CC BY-SA 4.0
+    </p>
+  </main>
+</body>
+</html>
+

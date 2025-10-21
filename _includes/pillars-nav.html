@@ -1,10 +1,7 @@
-{% assign pillar_slugs = "governance-risk|risk-compliance|asset-data|identity-access|network-security|application-security|endpoint-workload|sec-ops-monitoring|incident-response|privacy-data-protection|supply-chain|awareness-training" | split:"|" %}
-{% assign pillar_names = "Governance & Leadership|Risk & Compliance|Asset & Data Management|Identity & Access Management|Network Security|Application Security|Endpoint & Workload Security|Security Operations & Monitoring|Incident Response & Recovery|Privacy & Data Protection|Supply Chain & Third-Party Risk|Awareness, Training & Culture" | split:"|" %}
-
+{% assign items = site.data.pillars.pillars | sort: "order" %}
 <div class="pillars-nav">
   <a class="pill" href="{{ '/guides/' | relative_url }}">All Guides</a>
-  {% for n in pillar_names %}
-    {% assign s = pillar_slugs[forloop.index0] %}
-    <a class="pill" href="{{ '/guides/' | append: s | append: '/' | relative_url }}">{{ n }}</a>
+  {% for p in items %}
+    <a class="pill" href="{{ '/guides/' | append: p.slug | append: '/' | relative_url }}">{{ p.short }}</a>
   {% endfor %}
 </div>

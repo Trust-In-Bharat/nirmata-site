@@ -1,0 +1,50 @@
+# Order controls display sequence
+pillars:
+  - slug: governance-risk
+    name: "Governance & Leadership"
+    short: "Governance & Leadership"
+    order: 10
+  - slug: risk-compliance
+    name: "Risk & Compliance"
+    short: "Compliance"
+    order: 20
+  - slug: asset-data
+    name: "Asset & Data Management"
+    short: "Asset & Data"
+    order: 30
+  - slug: identity-access
+    name: "Identity & Access Management"
+    short: "Identity & Access"
+    order: 40
+  - slug: network-security
+    name: "Network Security"
+    short: "Network"
+    order: 50
+  - slug: application-security
+    name: "Application Security"
+    short: "Application"
+    order: 60
+  - slug: endpoint-workload
+    name: "Endpoint & Workload Security"
+    short: "Endpoint"
+    order: 70
+  - slug: sec-ops-monitoring
+    name: "Security Operations & Monitoring"
+    short: "SecOps"
+    order: 80
+  - slug: incident-response
+    name: "Incident Response & Recovery"
+    short: "Incident"
+    order: 90
+  - slug: privacy-data-protection
+    name: "Privacy & Data Protection"
+    short: "Privacy"
+    order: 100
+  - slug: supply-chain
+    name: "Supply Chain & Third-Party Risk"
+    short: "Supply Chain"
+    order: 110
+  - slug: awareness-training
+    name: "Awareness, Training & Culture"
+    short: "Awareness"
+    order: 120

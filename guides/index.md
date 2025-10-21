@@ -1,33 +1,24 @@
 ---
 layout: default
-title: Guides (Pillar Playbooks)
-nav_order: 6
-description: Practical guides to self-assess and move up maturity levels across all 12 NIRMATA pillars.
+title: Guides — Pillar Playbooks
 ---
 
-# Guides — Pillar Playbooks
+Use these playbooks to self-assess and level up with minimal friction and clear ROI.
 
-Use these playbooks to:
-- **Self-assess** your current maturity (quick checks and evidence to collect)
-- **Advance** from one level to the next with minimal friction and clear ROI
+## Governance & Leadership (GL)
+Below are the first 12 playbooks (GL-Q01…GL-Q12):
 
-Each guide includes:
-1. Quick posture checks (by maturity level)
-2. Evidence you should have on file
-3. Essential controls to reach the **next** level
-4. Low-cost tooling ideas and open-source options
-5. Metrics to prove improvement
+- [GL-Q01 — Governance structure]({{ '/guides/governance-risk/gl-q01' | relative_url }})
+- [GL-Q02 — Leadership risk updates]({{ '/guides/governance-risk/gl-q02' | relative_url }})
+- [GL-Q03 — Approved security policy]({{ '/guides/governance-risk/gl-q03' | relative_url }})
+- [GL-Q04 — Budget & staffing]({{ '/guides/governance-risk/gl-q04' | relative_url }})
+- [GL-Q05 — Appointed roles & independence]({{ '/guides/governance-risk/gl-q05' | relative_url }})
+- [GL-Q06 — Measurable objectives]({{ '/guides/governance-risk/gl-q06' | relative_url }})
+- [GL-Q07 — Tone at the top]({{ '/guides/governance-risk/gl-q07' | relative_url }})
+- [GL-Q08 — Escalation path]({{ '/guides/governance-risk/gl-q08' | relative_url }})
+- [GL-Q09 — Governing committee]({{ '/guides/governance-risk/gl-q09' | relative_url }})
+- [GL-Q10 — Third-party reporting]({{ '/guides/governance-risk/gl-q10' | relative_url }})
+- [GL-Q11 — Link to internal audit]({{ '/guides/governance-risk/gl-q11' | relative_url }})
+- [GL-Q12 — External benchmarking]({{ '/guides/governance-risk/gl-q12' | relative_url }})
 
-## Pillar Guides
-- [Governance & Risk Management](./governance-risk.md)
-- [Asset & Data Management](./asset-data.md)
-- [Identity & Access Management](./identity-access.md)
-- [Network Security](./network-security.md)
-- [Application Security](./application-security.md)
-- [Endpoint & Workload Security](./endpoint-workload.md)
-- [Security Operations & Monitoring](./sec-ops-monitoring.md)
-- [Incident Response & Recovery](./incident-response.md)
-- [Privacy & Data Protection](./privacy-data-protection.md)
-- [Compliance & Audit Readiness](./compliance-audit.md)
-- [Supply Chain & Third-Party Risk](./supply-chain.md)
-- [Awareness, Training & Culture](./awareness-training.md)
+> More pillars will appear here as we publish them.

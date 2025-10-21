@@ -59,3 +59,45 @@ th { background:#f6f8fa; }
 }
 .guides-nav .pager a.prev::before{content:"◄ "; font-size:1.05em}
 .guides-nav .pager a.next::after{content:" ►"; font-size:1.05em}
+
+/* --- Guides hub / pillar polish --- */
+.guides-intro{
+  font-size:1.15rem;
+  line-height:1.6;
+  margin:6px 0 18px;
+  color:#445;
+}
+
+/* Pillar buttons */
+.guides-nav .pillars{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:10px 12px;
+  margin-bottom:8px;
+}
+.guides-nav .pillars a{
+  display:inline-block;
+  padding:8px 12px; border-radius:999px;
+  border:1px solid #cfd8dc; background:#f8fbff; color:#0d47a1;
+  text-decoration:none; font-weight:600; font-size:.95rem;
+}
+.guides-nav .pillars a:hover{ background:#eaf3ff; border-color:#90caf9 }
+
+/* Cards for pillar pages */
+.guide-cards{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:12px; margin:14px 0 24px;
+}
+.guide-card{
+  border:1px solid #e0e0e0; border-left:6px solid #2a7ab0;
+  border-radius:10px; background:#fff; padding:12px 14px;
+}
+.guide-card h4{ margin:0 0 6px; font-size:1.05rem }
+.guide-card h4 a{ text-decoration:none; }
+.guide-card p{ margin:0; color:#566; font-size:.95rem }
+
+/* Pager pill buttons (reuse) */
+.guides-nav .pager a{
+  background:#e8f0fe; border:1px solid #1e88e5; color:#0d47a1;
+  padding:8px 14px; border-radius:999px; font-weight:600;
+}
+.guides-nav .pager a.prev::before{content:"◄ "; font-size:1.05em}
+.guides-nav .pager a.next::after{content:" ►"; font-size:1.05em}

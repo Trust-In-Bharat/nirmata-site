@@ -26,7 +26,7 @@ Clear, measurable objectives keep the program focused and defendable. They conne
 ## How to Level Up
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Draft 3–5 SMART objectives (e.g., “MFA coverage ≥95%”). |
+| 0 → 1 | Draft 3-5 SMART objectives (e.g., “MFA coverage ≥95%”). |
 | 1 → 2 | Assign owners/dates; publish on a shared page. |
 | 2 → 3 | Build a KPI tracker; review quarterly; tie to risks. |
 | 3 → 4 | Integrate with corporate OKRs; include in leadership deck. |

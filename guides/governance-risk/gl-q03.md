@@ -26,7 +26,7 @@ A living, approved policy sets the baseline for controls, reduces audit friction
 ## How to Level Up
 | From → To | Actions |
 |---|---|
-| 0 → 1 | Publish a 4–6 page policy covering scope, roles, access, monitoring, IR, vendors. |
+| 0 → 1 | Publish a 4-6 page policy covering scope, roles, access, monitoring, IR, vendors. |
 | 1 → 2 | Get formal approval; record version/date; post in intranet; notify staff. |
 | 2 → 3 | Add change log; map to sub-policies (e.g., access, backup, logging); collect annual attestations. |
 | 3 → 4 | Link policy to risk/audit findings; set KPIs (review cycle adherence). |

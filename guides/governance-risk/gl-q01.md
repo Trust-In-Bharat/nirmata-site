@@ -65,6 +65,6 @@ Without a clear governance structure, security and privacy efforts drift and acc
 |---|---|
 | ISO/IEC 27001:2022 | 5.3, 5.1 (leadership), Annex A.5.1 |
 | DPDP Act 2023 | Sec 10 (roles, accountability) |
-| GDPR (orientation) | Art. 24–25 (responsibility) |
+| GDPR (orientation) | Art. 24-25 (responsibility) |
 | NIRMATA Scoring | GL-Q01 evidence anchors; Level ≥3 requires charter + minutes.
 

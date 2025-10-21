@@ -62,6 +62,6 @@ Controls cost money and time. A small, ring-fenced budget and explicit capacity 
 ## Compliance Mapping
 | Standard | Clauses / Notes |
 |---|---|
-| ISO/IEC 27001:2022 | 7.1–7.3 (resources/competence) |
+| ISO/IEC 27001:2022 | 7.1-7.3 (resources/competence) |
 | NIRMATA Scoring | GL-Q04 expects documented budget + staffing evidence.
 

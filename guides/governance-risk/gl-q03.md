@@ -46,7 +46,7 @@ A living, approved policy sets the baseline for controls, reduces audit friction
 ## Metrics / KPIs
 - Policy review on time (Y/N).
 - Attestation completion rate.
-- # deviations/exceptions approved.
+- Number of deviations/exceptions approved.
 
 ## Low-Cost / Open-Source Options (MSME)
 

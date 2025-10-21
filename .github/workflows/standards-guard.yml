@@ -1,0 +1,21 @@
+name: Standards wording guard
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan Markdown for risky verbatim phrases
+        run: |
+          set -e
+          hit=$(grep -RIn --include="*.md" -E \
+          'This International Standard|The organization shall|shall establish and maintain|Context of the organization|Leadership and commitment|Information security management system' || true)
+          if [ -n "$hit" ]; then
+            echo "❌ Potential verbatim standard wording found:"
+            echo "$hit"
+            exit 1
+          fi
+          echo "✅ No risky phrases found."

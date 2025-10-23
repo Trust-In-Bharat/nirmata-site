@@ -292,3 +292,8 @@ th { background:#f6f8fa; }
   margin:0;
   padding:8px 14px;
 }
+/* Prev at left edge of content; Next at right */
+.playbook-prevnext{
+  justify-content: space-between;
+  margin: 10px 0 18px; /* keep existing spacing */
+}

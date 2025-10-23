@@ -4,20 +4,21 @@ title: Incident Response & Recovery — Playbooks
 pillar: "Incident Response & Recovery"
 ---
 
-{% include pillars-nav.html %}
+{% include guides-nav.html %}
 
-## Incident Response & Recovery — Playbooks
+## Incident Response & Recovery — 12 Playbooks
 
-{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
-{% if items and items.size > 0 %}
-<div class="guide-cards">
-{% for p in items %}
-  <div class="guide-card">
-    <h4><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></h4>
-    <p>{{ p.question | default: p.title }}</p>
-  </div>
-{% endfor %}
-</div>
-{% else %}
-<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
-{% endif %}
+<ul class="playbook-list">
+  <li><a href="{{ '/guides/incident-response/ir-q01' | relative_url }}">IR-Q01</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q02' | relative_url }}">IR-Q02</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q03' | relative_url }}">IR-Q03</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q04' | relative_url }}">IR-Q04</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q05' | relative_url }}">IR-Q05</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q06' | relative_url }}">IR-Q06</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q07' | relative_url }}">IR-Q07</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q08' | relative_url }}">IR-Q08</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q09' | relative_url }}">IR-Q09</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q10' | relative_url }}">IR-Q10</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q11' | relative_url }}">IR-Q11</a></li>
+  <li><a href="{{ '/guides/incident-response/ir-q12' | relative_url }}">IR-Q12</a></li>
+</ul>

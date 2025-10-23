@@ -4,20 +4,21 @@ title: Network Security — Playbooks
 pillar: "Network Security"
 ---
 
-{% include pillars-nav.html %}
+{% include guides-nav.html %}
 
-## Network Security — Playbooks
+## Network Security — 12 Playbooks
 
-{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
-{% if items and items.size > 0 %}
-<div class="guide-cards">
-{% for p in items %}
-  <div class="guide-card">
-    <h4><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></h4>
-    <p>{{ p.question | default: p.title }}</p>
-  </div>
-{% endfor %}
-</div>
-{% else %}
-<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
-{% endif %}
+<ul class="playbook-list">
+  <li><a href="{{ '/guides/network-security/ns-q01' | relative_url }}">NS-Q01</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q02' | relative_url }}">NS-Q02</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q03' | relative_url }}">NS-Q03</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q04' | relative_url }}">NS-Q04</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q05' | relative_url }}">NS-Q05</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q06' | relative_url }}">NS-Q06</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q07' | relative_url }}">NS-Q07</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q08' | relative_url }}">NS-Q08</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q09' | relative_url }}">NS-Q09</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q10' | relative_url }}">NS-Q10</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q11' | relative_url }}">NS-Q11</a></li>
+  <li><a href="{{ '/guides/network-security/ns-q12' | relative_url }}">NS-Q12</a></li>
+</ul>

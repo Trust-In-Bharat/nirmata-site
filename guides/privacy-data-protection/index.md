@@ -4,20 +4,21 @@ title: Privacy & Data Protection — Playbooks
 pillar: "Privacy & Data Protection"
 ---
 
-{% include pillars-nav.html %}
+{% include guides-nav.html %}
 
-## Privacy & Data Protection — Playbooks
+## Privacy & Data Protection — 12 Playbooks
 
-{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
-{% if items and items.size > 0 %}
-<div class="guide-cards">
-{% for p in items %}
-  <div class="guide-card">
-    <h4><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></h4>
-    <p>{{ p.question | default: p.title }}</p>
-  </div>
-{% endfor %}
-</div>
-{% else %}
-<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
-{% endif %}
+<ul class="playbook-list">
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q01' | relative_url }}">PD-Q01</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q02' | relative_url }}">PD-Q02</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q03' | relative_url }}">PD-Q03</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q04' | relative_url }}">PD-Q04</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q05' | relative_url }}">PD-Q05</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q06' | relative_url }}">PD-Q06</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q07' | relative_url }}">PD-Q07</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q08' | relative_url }}">PD-Q08</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q09' | relative_url }}">PD-Q09</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q10' | relative_url }}">PD-Q10</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q11' | relative_url }}">PD-Q11</a></li>
+  <li><a href="{{ '/guides/privacy-data-protection/pd-q12' | relative_url }}">PD-Q12</a></li>
+</ul>

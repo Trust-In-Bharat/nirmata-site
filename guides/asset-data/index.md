@@ -1,15 +1,20 @@
 ---
 layout: default
 title: Asset & Data Management — Playbooks
+pillar: "Asset & Data Management"
 ---
 
-{% include guides-nav.html %}
+{% include pillars-nav.html %}
 
-# Asset & Data Management — Playbooks
+## Asset & Data Management — Playbooks
 
-<ul class="playbook-list">
-{% assign docs = site.pages | where:"pillar","Asset & Data Management" | where_exp:"x","x.question_id" | sort:"question_id" %}
-{% for d in docs %}
-  <li><a href="{{ d.url | relative_url }}">{{ d.question_id }} — {{ d.title }}</a></li>
+{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
+{% if items and items.size > 0 %}
+<ul>
+{% for p in items %}
+  <li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
 {% endfor %}
 </ul>
+{% else %}
+<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
+{% endif %}

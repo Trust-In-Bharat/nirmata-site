@@ -4,21 +4,17 @@ title: Identity & Access Management — Playbooks
 pillar: "Identity & Access Management"
 ---
 
-{% include guides-nav.html %}
+{% include pillars-nav.html %}
 
-## Identity & Access Management — 12 Playbooks
+## Identity & Access Management — Playbooks
 
-<ul class="playbook-list">
-  <li><a href="{{ '/guides/identity-access/ia-q01' | relative_url }}">IA-Q01</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q02' | relative_url }}">IA-Q02</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q03' | relative_url }}">IA-Q03</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q04' | relative_url }}">IA-Q04</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q05' | relative_url }}">IA-Q05</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q06' | relative_url }}">IA-Q06</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q07' | relative_url }}">IA-Q07</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q08' | relative_url }}">IA-Q08</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q09' | relative_url }}">IA-Q09</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q10' | relative_url }}">IA-Q10</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q11' | relative_url }}">IA-Q11</a></li>
-  <li><a href="{{ '/guides/identity-access/ia-q12' | relative_url }}">IA-Q12</a></li>
+{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
+{% if items and items.size > 0 %}
+<ul>
+{% for p in items %}
+  <li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
+{% endfor %}
 </ul>
+{% else %}
+<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
+{% endif %}

@@ -4,21 +4,17 @@ title: Application Security — Playbooks
 pillar: "Application Security"
 ---
 
-{% include guides-nav.html %}
+{% include pillars-nav.html %}
 
-## Application Security — 12 Playbooks
+## Application Security — Playbooks
 
-<ul class="playbook-list">
-  <li><a href="{{ '/guides/application-security/as-q01' | relative_url }}">AS-Q01</a></li>
-  <li><a href="{{ '/guides/application-security/as-q02' | relative_url }}">AS-Q02</a></li>
-  <li><a href="{{ '/guides/application-security/as-q03' | relative_url }}">AS-Q03</a></li>
-  <li><a href="{{ '/guides/application-security/as-q04' | relative_url }}">AS-Q04</a></li>
-  <li><a href="{{ '/guides/application-security/as-q05' | relative_url }}">AS-Q05</a></li>
-  <li><a href="{{ '/guides/application-security/as-q06' | relative_url }}">AS-Q06</a></li>
-  <li><a href="{{ '/guides/application-security/as-q07' | relative_url }}">AS-Q07</a></li>
-  <li><a href="{{ '/guides/application-security/as-q08' | relative_url }}">AS-Q08</a></li>
-  <li><a href="{{ '/guides/application-security/as-q09' | relative_url }}">AS-Q09</a></li>
-  <li><a href="{{ '/guides/application-security/as-q10' | relative_url }}">AS-Q10</a></li>
-  <li><a href="{{ '/guides/application-security/as-q11' | relative_url }}">AS-Q11</a></li>
-  <li><a href="{{ '/guides/application-security/as-q12' | relative_url }}">AS-Q12</a></li>
+{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
+{% if items and items.size > 0 %}
+<ul>
+{% for p in items %}
+  <li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
+{% endfor %}
 </ul>
+{% else %}
+<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
+{% endif %}

@@ -4,21 +4,17 @@ title: Awareness, Training & Culture — Playbooks
 pillar: "Awareness, Training & Culture"
 ---
 
-{% include guides-nav.html %}
+{% include pillars-nav.html %}
 
-## Awareness, Training & Culture — 12 Playbooks
+## Awareness, Training & Culture — Playbooks
 
-<ul class="playbook-list">
-  <li><a href="{{ '/guides/awareness-training/at-q01' | relative_url }}">AT-Q01</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q02' | relative_url }}">AT-Q02</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q03' | relative_url }}">AT-Q03</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q04' | relative_url }}">AT-Q04</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q05' | relative_url }}">AT-Q05</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q06' | relative_url }}">AT-Q06</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q07' | relative_url }}">AT-Q07</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q08' | relative_url }}">AT-Q08</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q09' | relative_url }}">AT-Q09</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q10' | relative_url }}">AT-Q10</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q11' | relative_url }}">AT-Q11</a></li>
-  <li><a href="{{ '/guides/awareness-training/at-q12' | relative_url }}">AT-Q12</a></li>
+{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
+{% if items and items.size > 0 %}
+<ul>
+{% for p in items %}
+  <li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
+{% endfor %}
 </ul>
+{% else %}
+<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
+{% endif %}

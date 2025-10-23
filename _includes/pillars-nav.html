@@ -1,1 +1,35 @@
-{% include guides-nav.html %}
+{%- comment -%}
+  Central list of pillar slugs/names for hub + pillar pages.
+{%- endcomment -%}
+{% assign pillar_slugs = "governance-risk|asset-data|identity-access|network-security|application-security|endpoint-workload|sec-ops-monitoring|incident-response|privacy-data-protection|compliance-audit|supply-chain|awareness-training" | split:"|" %}
+{% assign pillar_names = "Governance & Leadership|Asset & Data Management|Identity & Access Management|Network Security|Application Security|Endpoint & Workload Security|Security Operations & Monitoring|Incident Response & Recovery|Privacy & Data Protection|Compliance & Audit Readiness|Supply Chain & Third-Party Risk|Awareness, Training & Culture" | split:"|" %}
+
+{%- assign current_pillar = page.pillar | default: "" -%}
+{%- assign i = -1 -%}
+{%- for n in pillar_names -%}
+  {%- if n == current_pillar -%}{%- assign i = forloop.index0 -%}{%- endif -%}
+{%- endfor -%}
+
+<nav class="guides-nav">
+  <div class="pillars">
+    <a href="{{ '/guides/' | relative_url }}">All Guides</a>
+    {%- for n in pillar_names -%}
+      {%- assign s = pillar_slugs[forloop.index0] -%}
+      <a href="{{ '/guides/' | append: s | append: '/' | relative_url }}">{{ n }}</a>
+    {%- endfor -%}
+  </div>
+
+  {%- if i != -1 -%}
+    {%- assign prev_i = i | minus: 1 -%}
+    {%- assign next_i = i | plus: 1 -%}
+    <div class="pager">
+      {%- if prev_i >= 0 -%}
+        <a class="prev" href="{{ '/guides/' | append: pillar_slugs[prev_i] | append:'/' | relative_url }}">Prev: {{ pillar_names[prev_i] }}</a>
+      {%- else -%}<span></span>{%- endif -%}
+      <span class="current">{{ pillar_names[i] }}</span>
+      {%- if next_i < pillar_names.size -%}
+        <a class="next" href="{{ '/guides/' | append: pillar_slugs[next_i] | append:'/' | relative_url }}">Next: {{ pillar_names[next_i] }}</a>
+      {%- else -%}<span></span>{%- endif -%}
+    </div>
+  {%- endif -%}
+</nav>

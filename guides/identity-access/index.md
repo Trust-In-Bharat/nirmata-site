@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Identity & Access Management — Playbooks
-pillar: "Identity & Access Management"
+title: Identity & Access — Playbooks
+pillar: "Identity & Access"
 ---
 
 {% include pillars-nav.html %}
 
-## Identity & Access Management — Playbooks
+## Identity & Access — Playbooks
 
 {% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
 {% if items and items.size > 0 %}
 <ul>
 {% for p in items %}
-  <li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
+<li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
 {% endfor %}
 </ul>
 {% else %}

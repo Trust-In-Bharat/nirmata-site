@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Risk & Compliance — Playbooks
-pillar: "Risk & Compliance"
+title: Governance & Leadership — Playbooks
+pillar: "Governance & Leadership"
 ---
 
 {% include pillars-nav.html %}
 
-## Risk & Compliance — Playbooks
+## Governance & Leadership — Playbooks
 
 {% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
 {% if items and items.size > 0 %}

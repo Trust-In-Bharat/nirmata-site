@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Risk & Compliance — Playbooks
-pillar: "Risk & Compliance"
+title: Culture, Training & Awareness — Playbooks
+pillar: "Culture, Training & Awareness"
 ---
 
 {% include pillars-nav.html %}
 
-## Risk & Compliance — Playbooks
+## Culture, Training & Awareness — Playbooks
 
 {% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
 {% if items and items.size > 0 %}

@@ -12,7 +12,7 @@ pillar: "Asset & Data Management"
 {% if items and items.size > 0 %}
 <ul>
 {% for p in items %}
-  <li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
+<li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
 {% endfor %}
 </ul>
 {% else %}

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Risk & Compliance — Playbooks
-pillar: "Risk & Compliance"
+title: Monitoring & Detection — Playbooks
+pillar: "Monitoring & Detection"
 ---
 
 {% include pillars-nav.html %}
 
-## Risk & Compliance — Playbooks
+## Monitoring & Detection — Playbooks
 
 {% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
 {% if items and items.size > 0 %}

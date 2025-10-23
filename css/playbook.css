@@ -262,3 +262,33 @@ th { background:#f6f8fa; }
   .guides-nav .pill{ margin:4px 4px; padding:7px 12px; }
   .question-cards{ grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); }
 }
+/* Global pill style so Prev/Next pills pick it up too */
+.pill{
+  display:inline-block;
+  margin:6px 6px;
+  padding:8px 14px;
+  border-radius:999px;
+  border:1px solid #1e88e5;
+  background:#e8f0fe;
+  color:#0d47a1;
+  font-weight:600;
+  text-decoration:none;
+}
+.pill:hover{ background:#d2e3fc; }
+.pill.active{ background:#1e88e5; color:#fff; }
+
+/* Prev/Next container on playbook pages */
+.playbook-prevnext{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  margin:8px 0 12px;
+}
+.playbook-prevnext .btns{
+  display:flex;
+  gap:10px;
+}
+.pill.nav{
+  margin:0;
+  padding:8px 14px;
+}

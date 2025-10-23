@@ -16,3 +16,8 @@ kramdown:
 exclude:
   - scripts
   - "*.sh"
+
+# NIRMATA: keep helper scripts out of published site
+exclude:
+  - scripts
+  - "*.sh"

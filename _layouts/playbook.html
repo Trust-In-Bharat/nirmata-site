@@ -1,51 +1,17 @@
-<link rel="stylesheet" href="{{ '/css/playbook.css' | relative_url }}">
-
 ---
 layout: default
 ---
 
+{% assign pillar = page.pillar | default: "" %}
 
-{% assign siblings = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
-{% assign index = -1 %}
-{% for s in siblings %}
-  {% if s.url == page.url %}
-    {% assign index = forloop.index0 %}
-  {% endif %}
-{% endfor %}
-{% assign prev_index = index | minus: 1 %}
-{% assign next_index = index | plus: 1 %}
-{% if prev_index >= 0 %}
-  {% assign prev = siblings | slice: prev_index, 1 | first %}
-{% endif %}
-{% if next_index < siblings.size %}
-  {% assign next = siblings | slice: next_index, 1 | first %}
-{% endif %}
-
-{% if page.pillar and page.question_id %}
-<p class="playbook-breadcrumb">{{ page.pillar }} · {{ page.question_id }}</p>
-{% include playbook-prevnext.html %}
+<p class="playbook-breadcrumb">
+  {{ pillar }} · {{ page.question_id }}
+</p>
 
 {% include pillars-nav.html %}
 
-
-
-
-{% endif %}
-
-{% if prev or next %}
-<div class="playbook-nav">
-  {% if prev %}<a class="nav-arrow prev" href="{{ prev.url | relative_url }}">◀︎ {{ prev.question_id }}</a>{% endif %}
-  {% if next %}<a class="nav-arrow next" href="{{ next.url | relative_url }}">{{ next.question_id }} → ▶︎</a>{% endif %}
-</div>
-{% endif %}
+{% include playbook-prevnext.html %}
 
 <main class="playbook">
   {{ content }}
 </main>
-
-{% if prev or next %}
-<div class="playbook-nav bottom">
-  {% if prev %}<a class="nav-arrow prev" href="{{ prev.url | relative_url }}">◀︎ {{ prev.question_id }}</a>{% endif %}
-  {% if next %}<a class="nav-arrow next" href="{{ next.url | relative_url }}">{{ next.question_id }} → ▶︎</a>{% endif %}
-</div>
-{% endif %}

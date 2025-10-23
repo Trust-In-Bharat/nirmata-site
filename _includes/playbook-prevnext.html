@@ -1,0 +1,23 @@
+{%- comment -%} Previous / Next question within the same pillar {%- endcomment -%}
+{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
+{% assign idx = -1 %}
+{% for p in items %}
+  {% if p.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}
+{% endfor %}
+{% if idx != -1 %}
+<div class="playbook-prevnext">
+  {% assign prev_i = idx | minus: 1 %}
+  {% assign next_i = idx | plus: 1 %}
+  <div class="spacer"></div>
+  <div class="btns">
+    {% if prev_i >= 0 %}
+      {% assign prev = items[prev_i] %}
+      <a class="pill nav prev" href="{{ prev.url | relative_url }}">◀ {{ prev.question_id }}</a>
+    {% endif %}
+    {% if next_i < items.size %}
+      {% assign nxt = items[next_i] %}
+      <a class="pill nav next" href="{{ nxt.url | relative_url }}">{{ nxt.question_id }} ▶</a>
+    {% endif %}
+  </div>
+</div>
+{% endif %}

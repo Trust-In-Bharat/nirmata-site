@@ -1,0 +1,16 @@
+{%- comment -%} Cards for the pillar index {%- endcomment -%}
+{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
+{% if items and items.size > 0 %}
+<div class="question-cards">
+  {% for p in items %}
+  <a class="q-card" href="{{ p.url | relative_url }}">
+    <div class="q-code">{{ p.question_id }}</div>
+    {% if p.title %}
+      <div class="q-title">{{ p.title }}</div>
+    {% endif %}
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
+{% endif %}

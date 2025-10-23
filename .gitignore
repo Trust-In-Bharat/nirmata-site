@@ -1,0 +1,4 @@
+
+# NIRMATA: keep helper scripts out of the repo & site
+scripts/
+*.sh

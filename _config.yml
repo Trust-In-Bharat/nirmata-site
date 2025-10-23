@@ -11,3 +11,8 @@ plugins:
 
 kramdown:
   input: GFM
+
+# NIRMATA: keep helper scripts out of published site
+exclude:
+  - scripts
+  - "*.sh"

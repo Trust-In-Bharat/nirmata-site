@@ -1,5 +1,9 @@
-{%- comment -%} Cards for the pillar index {%- endcomment -%}
-{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
+{%- comment -%} Cards for the pillar index (only layout: playbook) {%- endcomment -%}
+{% assign items = site.pages
+   | where:"pillar", page.pillar
+   | where:"layout","playbook"
+   | where_exp:"x","x.question_id"
+   | sort:"question_id" %}
 {% if items and items.size > 0 %}
 <div class="question-cards">
   {% for p in items %}

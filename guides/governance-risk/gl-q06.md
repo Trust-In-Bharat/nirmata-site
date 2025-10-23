@@ -67,4 +67,3 @@ Clear, measurable objectives keep the program focused and defendable. They conne
 |---|---|
 |ISO/IEC 27001:2022 | 6.2 objectives |
 |NIRMATA Scoring | GL-Q06 requires measurable, owner-assigned objectives.
-

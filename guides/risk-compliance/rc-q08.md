@@ -68,4 +68,4 @@ Quantitative or semi-quantitative scoring allows objective prioritization. It mo
 | ISO/IEC 31000 | Risk analysis and evaluation. |
 | ISO/IEC 27005 | §8.2 (assessment criteria). |
 | NIST CSF 2.0 | ID.RA-5 (quantitative prioritization). |
-| NIRMATA Scoring | RC-Q08 Level ≥ 3 requires documented quantitative model + evidence of use. 
+| NIRMATA Scoring | RC-Q08 Level ≥ 3 requires documented quantitative model + evidence of use.

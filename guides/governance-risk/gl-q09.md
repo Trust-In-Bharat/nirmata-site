@@ -66,4 +66,3 @@ A cross-functional committee unblocks decisions across IT, Legal, HR, Ops, and F
 |---|---|
 |ISO/IEC 27001:2022 | 5.3, 9.3 |
 |NIRMATA Scoring | GL-Q09 requires active committee with evidence.
-

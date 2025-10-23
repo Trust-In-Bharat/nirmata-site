@@ -70,4 +70,3 @@ Without a clear governance structure, security and privacy efforts drift and acc
 |DPDP Act 2023 | Sec 10 (roles, accountability) |
 |GDPR (orientation) | Art. 24-25 (responsibility) |
 |NIRMATA Scoring | GL-Q01 evidence anchors; Level ≥3 requires charter + minutes.
-

@@ -68,4 +68,3 @@ Named, empowered roles avoid conflicts and speed decisions, especially for incid
 |ISO/IEC 27001:2022 | 5.3 roles/responsibilities |
 |DPDP Act 2023 | Sec 10(1) DPO/lead |
 |NIRMATA Scoring | GL-Q05 expects formal mandate + independence proof.
-

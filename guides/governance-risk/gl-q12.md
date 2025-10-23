@@ -68,4 +68,3 @@ External benchmarks prevent local optimism bias and show where to invest next. T
 |ISO/IEC 27001:2022 | 9.1 monitoring & measurement |
 |CERT-In / Sector Programmes | Participation evidence |
 |NIRMATA Scoring | GL-Q12: external benchmark + action linkage required.
-

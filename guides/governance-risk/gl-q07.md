@@ -67,4 +67,3 @@ People mirror leaders. Regular, plain-language messages normalize secure behavio
 |---|---|
 |ISO/IEC 27001:2022 | 5.1 leadership |
 |NIRMATA Scoring | GL-Q07 needs evidence of regular, two-way comms.
-

@@ -68,4 +68,3 @@ Leadership visibility drives funding, prioritization, and cross-department coope
 |ISO/IEC 27001:2022 | 9.3 (management review) |
 |CERT-In 2022 | Governance/oversight expectation |
 |NIRMATA Scoring | GL-Q02: evidence = decks + minutes + action closure.
-

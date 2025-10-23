@@ -67,4 +67,3 @@ Audit closes the loop: controls verified, issues tracked, and lessons learned fe
 |---|---|
 |ISO/IEC 27001:2022 | 9.2 internal audit, 10.1 improvement |
 |NIRMATA Scoring | GL-Q11 needs CAPA linkage + governance reporting.
-

@@ -68,4 +68,3 @@ A living, approved policy sets the baseline for controls, reduces audit friction
 |ISO/IEC 27001:2022 | 5.2; Annex A mapping |
 |DPDP Act 2023 | Sec 9 duty alignment |
 |NIRMATA Scoring | GL-Q03 requires approved policy + annual review proof.
-

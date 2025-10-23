@@ -68,4 +68,3 @@ Escalation clarity cuts response time and limits damage. Everyone should know â€
 |ISO/IEC 27001:2022 | A.5.25, incident comms |
 |CERT-In 2022 | Escalation to leadership/regulator |
 |NIRMATA Scoring | GL-Q08 expects matrix + tested workflow.
-

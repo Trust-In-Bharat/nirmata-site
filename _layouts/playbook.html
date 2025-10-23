@@ -23,7 +23,11 @@ layout: default
 
 {% if page.pillar and page.question_id %}
 <p class="playbook-breadcrumb">{{ page.pillar }} · {{ page.question_id }}</p>
+{% include playbook-prevnext.html %}
+
 {% include pillars-nav.html %}
+
+
 
 
 {% endif %}

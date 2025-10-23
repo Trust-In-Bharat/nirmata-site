@@ -68,4 +68,3 @@ Most breaches involve suppliers. Leadership needs regular visibility to vendor r
 |ISO 27036 / ISO 27701 | Vendor governance |
 |DPDP | Sec 8 duties of processors |
 |NIRMATA Scoring | GL-Q10 expects periodic leadership reporting + actions.
-

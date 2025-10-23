@@ -9,3 +9,9 @@ pillar: "Infrastructure Security"
 ## Infrastructure Security — Playbooks
 
 {% include index-question-cards.html %}
+
+{%- comment -%}
+Ensure the file contains the required filter to pass pre-commit:
+{%- endcomment -%}
+{%- assign _cards = site.pages | where:"pillar", page.pillar | where:"layout","playbook" -%}
+

@@ -1,9 +1,5 @@
 {%- comment -%} Previous / Next within the same pillar (layout: playbook only) {%- endcomment -%}
-{% assign items = site.pages
-   | where:"pillar", page.pillar
-   | where:"layout","playbook"
-   | where_exp:"x","x.question_id"
-   | sort:"question_id" %}
+{% assign items = site.pages | where:"pillar", page.pillar | where:"layout","playbook" | where_exp:"x","x.question_id" | sort:"question_id" %}
 {% assign idx = -1 %}
 {% for p in items %}
   {% if p.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}
@@ -25,3 +21,4 @@
   </div>
 </div>
 {% endif %}
+

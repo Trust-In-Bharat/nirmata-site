@@ -1,10 +1,9 @@
 <link rel="stylesheet" href="{{ '/css/playbook.css' | relative_url }}">
-{% include pillars-nav.html %}
+
 ---
 layout: default
 ---
 
-{% include guides-nav.html %}
 
 {% assign siblings = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
 {% assign index = -1 %}
@@ -24,7 +23,8 @@ layout: default
 
 {% if page.pillar and page.question_id %}
 <p class="playbook-breadcrumb">{{ page.pillar }} · {{ page.question_id }}</p>
-{% include playbook-prevnext.html %}
+{% include pillars-nav.html %}
+
 
 {% endif %}
 

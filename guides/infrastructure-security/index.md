@@ -8,7 +8,7 @@ pillar: "Infrastructure Security"
 
 ## Infrastructure Security — Playbooks
 
-The Infrastructure Security pillar covers the foundational safeguards that protect core IT systems, data centers, and enterprise networks.  
+The Infrastructure Security pillar covers the foundational safeguards that protect core IT systems, data centers, and enterprise networks.
 It includes secure configuration, hardening, segmentation, and monitoring that together form the technical backbone of a resilient organization.
 
 ---
@@ -17,22 +17,23 @@ It includes secure configuration, hardening, segmentation, and monitoring that t
 {%- assign _cards = site.pages
    | where:"pillar", page.pillar
    | where:"layout","playbook"
-   | where_exp:"x","x.question_id and x.question_id contains 'IS-Q'"
-   | where_exp:"x","x.question_id size == 6" -%}
+   | where_exp:"x","x.question_id and x.question_id contains 'IS-Q' and x.question_id contains 'B' == false"
+   | sort: "question_id" -%}
 {% include index-question-cards.html %}
 
 ---
 
 ### Bonus Questions IS-Q13B to IS-Q24B
 
-> Why these exist  
-> In earlier drafts Network Security was a separate pillar. In Annex G v1.0, its scope is merged into Infrastructure Security.  
+> Why these exist
+> In earlier drafts Network Security was a separate pillar. In Annex G v1.0, its scope is merged into Infrastructure Security.
 > These twelve bonus playbooks provide deeper implementation guidance for segmentation, firewall management, IDS or IPS, wireless, redundancy, and architecture review.
 
 {%- assign _bonus = site.pages
    | where:"pillar", page.pillar
    | where:"layout","playbook"
-   | where_exp:"x","x.question_id and x.question_id contains 'B'" -%}
+   | where_exp:"x","x.question_id and x.question_id contains 'IS-Q' and x.question_id contains 'B'"
+   | sort: "question_id" -%}
 <ul class="bonus-list">
   {%- for p in _bonus -%}
   <li><a href="{{ p.url | relative_url }}">{{ p.question_id }} — {{ p.title }}</a></li>

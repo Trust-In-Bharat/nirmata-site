@@ -21,7 +21,7 @@ These represent the canonical Infrastructure Security requirements from Annex G 
 {%- assign _cards = site.pages
   | where:"pillar", page.pillar
   | where:"layout","playbook"
-  | where_exp:"x","x.question_id and (x.question_id contains 'IS-Q') and ((x.question_id contains 'B') == false)"
+  | where_exp:"x","x.question_id and x.question_id contains 'IS-Q' and x.question_id contains 'B' == false"
   | sort_natural:"question_id" -%}
 {% include index-question-cards.html %}
 
@@ -30,14 +30,14 @@ These represent the canonical Infrastructure Security requirements from Annex G 
 ### Bonus Questions (IS-Q13B to IS-Q24B)
 
 > **Why these exist**  
-> Earlier drafts maintained “Network Security” as a separate pillar. In Annex G v1.0, that scope is merged into Infrastructure Security.
+> Earlier drafts maintained "Network Security" as a separate pillar. In Annex G v1.0, that scope is merged into Infrastructure Security.
 > These twelve bonus playbooks provide deeper implementation guidance for segmentation, firewall management, IDS or IPS, wireless, redundancy, and architecture review.
 
 {%- comment -%} Bonus list: IS-Q13B to IS-Q24B {%- endcomment -%}
 {%- assign _bonus = site.pages
   | where:"pillar", page.pillar
   | where:"layout","playbook"
-  | where_exp:"x","x.question_id and (x.question_id contains 'IS-Q') and (x.question_id contains 'B')"
+  | where_exp:"x","x.question_id and x.question_id contains 'IS-Q' and x.question_id contains 'B'"
   | sort_natural:"question_id" -%}
 <ul class="bonus-list">
   {%- for p in _bonus -%}

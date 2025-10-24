@@ -5,7 +5,7 @@ version: "1.0"
 updated: "October 2025"
 license: "CC BY-SA 4.0"
 pillar: "Identity & Access"
-question_id: 10
+question_id: "IA-Q10"
 ---
 
 ## Question

@@ -1,20 +1,15 @@
 ---
 layout: default
-title: Endpoint & Workload Security — Playbooks
-pillar: "Endpoint & Workload Security"
+title: Endpoint & Workload Protection — Playbooks
+pillar: "Endpoint & Workload Protection"
 ---
 
 {% include pillars-nav.html %}
 
-## Endpoint & Workload Security — Playbooks
+## Endpoint & Workload Protection — Playbooks
 
-{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
-{% if items and items.size > 0 %}
-<ul>
-{% for p in items %}
-  <li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
-{% endfor %}
-</ul>
-{% else %}
-<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
-{% endif %}
+{% include index-question-cards.html %}
+
+{%- comment -%} Required filter for guardrails {%- endcomment -%}
+{%- assign _cards = site.pages | where:"pillar", page.pillar | where:"layout","playbook" -%}
+

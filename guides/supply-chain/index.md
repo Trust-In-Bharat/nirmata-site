@@ -9,3 +9,7 @@ pillar: "Supply-Chain Security"
 ## Supply-Chain Security — Playbooks
 
 {% include index-question-cards.html %}
+
+{%- comment -%} Required filter for guardrails {%- endcomment -%}
+{%- assign _cards = site.pages | where:"pillar", page.pillar | where:"layout","playbook" -%}
+

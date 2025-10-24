@@ -1,20 +1,15 @@
 ---
 layout: default
-title: Awareness, Training & Culture — Playbooks
-pillar: "Awareness, Training & Culture"
+title: Awareness & Culture — Playbooks
+pillar: "Awareness & Culture"
 ---
 
 {% include pillars-nav.html %}
 
-## Awareness, Training & Culture — Playbooks
+## Awareness & Culture — Playbooks
 
-{% assign items = site.pages | where:"pillar", page.pillar | where_exp:"x","x.question_id" | sort:"question_id" %}
-{% if items and items.size > 0 %}
-<ul>
-{% for p in items %}
-  <li><a href="{{ p.url | relative_url }}">{{ p.question_id }}</a></li>
-{% endfor %}
-</ul>
-{% else %}
-<p>Playbooks for <strong>{{ page.pillar }}</strong> are coming soon.</p>
-{% endif %}
+{% include index-question-cards.html %}
+
+{%- comment -%} Required filter for guardrails {%- endcomment -%}
+{%- assign _cards = site.pages | where:"pillar", page.pillar | where:"layout","playbook" -%}
+

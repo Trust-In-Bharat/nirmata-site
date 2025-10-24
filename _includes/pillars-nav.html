@@ -1,8 +1,8 @@
 {%- comment -%}
-  Canonical pillars. Edit only here.
+  Canonical pillars (Annex G). Edit ONLY here.
 {%- endcomment -%}
-{% assign pillar_slugs = "governance-leadership|risk-compliance|asset-data|identity-access|infrastructure-security|endpoint-workload|monitoring-detection|incident-readiness|business-continuity|privacy-data-protection|supply-chain|awareness-training" | split:"|" %}
-{% assign pillar_names = "Governance & Leadership|Risk & Compliance|Asset & Data Management|Identity & Access|Infrastructure Security|Endpoint & Workload Protection|Monitoring & Detection|Incident Readiness|Business Continuity & Resilience|Privacy & Data Protection|Supply-Chain Security|Culture, Training & Awareness" | split:"|" %}
+{% assign pillar_slugs = "governance-leadership|risk-compliance|asset-data|identity-access|infrastructure-security|application-security|monitoring-detection|incident-readiness|business-continuity|privacy-data-protection|supply-chain|awareness-training" | split:"|" %}
+{% assign pillar_names = "Governance & Leadership|Risk & Compliance|Asset & Data Management|Identity & Access|Infrastructure Security|Application Security|Monitoring & Detection|Incident Readiness|Business Continuity & Resilience|Privacy & Data Protection|Supply-Chain Security|Culture, Training & Awareness" | split:"|" %}
 
 {%- assign current_pillar = page.pillar | default: "" -%}
 
@@ -16,3 +16,4 @@
     {%- endfor -%}
   </div>
 </nav>
+

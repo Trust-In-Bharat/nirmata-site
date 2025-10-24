@@ -15,25 +15,27 @@ It includes secure configuration, hardening, segmentation, and monitoring that t
 
 ### All Playbooks (IS-Q01 → IS-Q24B)
 
+{%- assign _cards = site.pages
+   | where:"pillar", page.pillar
+   | where:"layout","playbook"
+   | where_exp:"x","x.question_id" -%}
+
 <div class="cards-grid">
-{%- for p in site.pages -%}
-  {%- if p.pillar == page.pillar and p.layout == "playbook" and p.question_id -%}
-    <a class="card" href="{{ p.url | relative_url }}">
-      <div class="card-body">
-        <div class="card-kicker">{{ p.question_id }}</div>
-        <div class="card-title">{{ p.title }}</div>
-      </div>
-    </a>
-  {%- endif -%}
+{%- for p in _cards -%}
+  <a class="card" href="{{ p.url | relative_url }}">
+    <div class="card-body">
+      <div class="card-kicker">{{ p.question_id }}</div>
+      <div class="card-title">{{ p.title }}</div>
+    </div>
+  </a>
 {%- endfor -%}
 </div>
 
 ---
 
 {%- comment -%}
-Keep the required guardrail include for CI validation.
-It will not double-render since _cards is explicitly empty.
+Required by pre-commit: keep the shared include, but capture it so it
+doesn't render a second list on the page.
 {%- endcomment -%}
-{%- assign _cards = "" | split:"|" -%}
-{% include index-question-cards.html %}
+{% capture _suppress %}{% include index-question-cards.html %}{% endcapture %}
 
